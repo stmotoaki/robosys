@@ -10,5 +10,6 @@ for line in sys.argv[1:]:
         ans += int(line)
     except:
         ans += 0
+        print("ERROR:数字以外が足されています")
 
 print(ans)
