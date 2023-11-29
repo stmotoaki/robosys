@@ -4,11 +4,14 @@
 import sys
 
 ans = 0
+c = 0
 
 for line in sys.argv[1:]:
+    c += 1
     try:
         ans += int(line)
     except:
         ans += 0
+        print("ERROR:" + str(c) + "番目に数字以外が含まれる")
 
 print(ans)

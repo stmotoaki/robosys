@@ -11,10 +11,10 @@ out=$(./plus 1 2 3 4 5)
 [ "${out}" = 15 ] || ng ${LINENO}
 
 out=$(./plus 1 2 3 a 4 5)
-[ "${out}" = 15 ] || ng ${LINENO}
+[ "${out}" = ERROR:4番目に数字以外が含まれる$'\n'15 ] || ng ${LINENO}
 
-out=$(./plus a b c d e)
-[ "${out}" = 0 ] || ng ${LINENO}
+out=$(./plus a b c)
+[ "${out}" = ERROR:1番目に数字以外が含まれる$'\n'ERROR:2番目に数字以外が含まれる$'\n'ERROR:3番目に数字以外が含まれる$'\n'0 ] || ng ${LINENO}
 
 [ "$res" = 0 ] && echo OK
 exit $res
