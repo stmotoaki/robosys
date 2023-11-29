@@ -9,6 +9,6 @@ for line in sys.argv[1:]:
     try:
         ans += int(line)
     except:
-        ans += float(line)
+        ans += 0
 
 print(ans)
