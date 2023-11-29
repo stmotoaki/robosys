@@ -7,16 +7,16 @@ ng () {
 
 res=0
 
-out=$(seq 5 | ./plus)
+out=$(./plus 1 2 3 4 5)
 [ "${out}" = 15 ] || ng ${LINENO}
 
-out=$(echo あ | ./plus)
+out=$(./plus 1 2 3 a 4 5)
 [ "$?" = 1 ] || ng ${LINENO}
-[ "${out}" = "" ] || ng ${LINENO}
+[ "${out}" = 15 ] || ng ${LINENO}
 
-out=$(echo | ./plus)
+out=$(./plus 1 2 あ 3 4 5)
 [ "$?" = 1 ] || ng ${LINENO}
-[ "${out}" = "" ] || ng ${LINENO}
+[ "${out}" = 15 ] || ng ${LINENO}
 
 [ "$res" = 0 ] && echo OK
 exit $res
