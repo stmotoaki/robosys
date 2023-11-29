@@ -3,7 +3,7 @@
 # plusコマンド
 ![test](https://github.com/stmotoaki/robosys2023/actions/workflows/test.yml/badge.svg)
 
-* 標準入力から読み込んだ数字を足す。
+* 入力された引数をすべて足す。
 * 数字以外が読み込まれていた場合エラー表示する。
 
 <例>  
