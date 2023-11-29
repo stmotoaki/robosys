@@ -3,13 +3,13 @@
 # SPDX-License-Identifier: BSD-3-Clause
 import sys
 
-ans = 0
+ans = 0.0
 c = 0
 
 for line in sys.argv[1:]:
     c += 1
     try:
-        ans += int(line)
+        ans += float(line)
     except:
         ans += 0
         print("ERROR:" + str(c) + "番目に数字以外が含まれる")
