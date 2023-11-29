@@ -4,8 +4,10 @@
 ![test](https://github.com/stmotoaki/robosys2023/actions/workflows/test.yml/badge.svg)
 
 標準入力から読み込んだ数字を足す。
-
-（ここに前ページの項目をいろいろ書く）
+数字以外が読み込まれていた場合エラー表示する。
+例: $ ./plus 1 2 3 A 4 5
+    $ ERROR:5番目に数字以外が含まれる
+    $ 15
 
 ## 必要なソフトウェア
 * Python
