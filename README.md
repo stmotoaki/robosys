@@ -1,4 +1,8 @@
-# plusコマンド
+# robosys2023
+
+このリポジトリはロボットシステム学で出された課題を提出する場所である。
+
+## plusコマンド
 ![test](https://github.com/stmotoaki/robosys2023/actions/workflows/test.yml/badge.svg)
 
 * 入力された引数をすべて足す。
