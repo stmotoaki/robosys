@@ -1,5 +1,3 @@
-# robosys2023
-
 # plusコマンド
 ![test](https://github.com/stmotoaki/robosys2023/actions/workflows/test.yml/badge.svg)
 
