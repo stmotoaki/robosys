@@ -15,6 +15,10 @@ $ ERROR:4番目に数字以外が含まれる
 $ 15.0  
 ```
 
+## インストール
+```
+$ git clone https://github.com/stmotoaki/robosys2023.git
+```
 ## 必要なソフトウェア
 * Python
   * テスト済み: 3.7～3.10
